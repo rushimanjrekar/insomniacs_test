@@ -12,7 +12,7 @@ use Session;
 class RegistrationController extends Controller
 {
     public function index() { 
-    $details=DB::table('registration')->get();
+    $details=DB::table('registration')->where('verify','1')->get();
     
     return view('register',compact('details')); 
      }  

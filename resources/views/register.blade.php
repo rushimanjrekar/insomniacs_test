@@ -178,11 +178,13 @@
                       $('#send_otp').hide();
             
                       $('#msg_div').removeClass('d-none');
-                        
+                                            
                       setTimeout(function(){
                         $('#res_message').hide();
                         $('#msg_div').hide();
                       },10000);
+
+                      
                   }
             
                 });
@@ -238,6 +240,9 @@
 
                         $('#tbody').append(html);
                     }
+
+                    document.getElementById("contact_us").reset();
+                    document.getElementById("verify").reset();
                  }
               })
             }
