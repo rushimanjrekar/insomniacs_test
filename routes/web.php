@@ -18,3 +18,4 @@ Route::get('/', function () {
 
 Route::get('contact', 'RegistrationController@index');
 Route::post('contact-form', 'RegistrationController@store');
+Route::post('verifyOtp', 'RegistrationController@verify');

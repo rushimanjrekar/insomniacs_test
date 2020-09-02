@@ -12,7 +12,6 @@ class Registration extends Model
 
     public static function List() 
     {
-        //$Displaydetails=\App\Models\Registration::select('emp_id','name')->where('role','TM')->get();
         $Displaydetails=DB::table('registration')->get();
         return $Displaydetails;
     }
